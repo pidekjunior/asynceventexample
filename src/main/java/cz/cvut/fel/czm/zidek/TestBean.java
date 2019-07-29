@@ -13,9 +13,18 @@ public class TestBean implements Serializable {
     @Inject
     private Event<String> stringEvent;
 
+    public TestBean() {
+        System.out.println("TestBean constructor call. Instance: " + this);
+    }
+
+    public String getTestString() {
+        return "Test string to activate TestBean.";
+    }
+
     public String testFireAsync() {
         stringEvent.fireAsync("Fired message!");
         return "test output string";
     }
+
 
 }

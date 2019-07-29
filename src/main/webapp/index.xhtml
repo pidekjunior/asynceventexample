@@ -11,11 +11,20 @@
     <h:outputText value="#{test2Bean}"/>
 
     <hr/>
+    <h:outputText value="#{testBean.testString}"/>
+    <br/>
+    <h:outputText value="Instance of TestBean is: "/>
+    <h:outputText value="#{testBean}"/>
+
+    <hr/>
 
     <h:outputText value="Now, let trigger the event in cz.cvut.fel.czm.zidek.TestBean."/>
     <br/>
     <h:outputText value="TestBean#testFireAsync() method output: "/>
     <h:outputText value="#{testBean.testFireAsync()}"/>
+    <br/>
+    <h:outputText value="Instance of TestBean is: "/>
+    <h:outputText value="#{testBean}"/>
 
     <hr/>
 
